@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.black38,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
-          title: TextStyle(
+          subtitle1: TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         ),
         appBarTheme: AppBarTheme(
           textTheme: ThemeData.light().textTheme.copyWith(
-          title: TextStyle(
+          subtitle1: TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
         children: [
           Text(
             'Show chart',
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.subtitle1,
           ),
           Switch(value: _showChart,
               onChanged: (val)
